@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_v2/model/user.dart';
-import 'package:mvvm_v2/serviece/web_serviece.dart';
+import 'package:mvvm_v2/service/web_service.dart';
 
 class UserListViewModel extends ChangeNotifier {
   List<User> userList = [];
