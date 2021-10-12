@@ -1,3 +1,6 @@
+import 'package:injectable/injectable.dart';
+
+@lazySingleton
 class Cake {
   final int price, size, id;
   final String title;

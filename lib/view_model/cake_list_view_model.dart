@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 import 'package:mvvm_v2/model/Cake.dart';
-
+@lazySingleton
 class CakeListViewModel extends ChangeNotifier{
   List<Cake> cakes = [
     Cake(
@@ -46,7 +46,6 @@ class CakeListViewModel extends ChangeNotifier{
       price: 34,
       size: 30,
     ),
-
   ];
   Delete(int index){
     cakes.removeAt(index);

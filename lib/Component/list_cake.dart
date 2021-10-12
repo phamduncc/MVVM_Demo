@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 import 'package:mvvm_v2/view_model/cake_list_view_model.dart';
 import 'package:provider/provider.dart';
 
 import '../locator.dart';
-
 class ListCakes extends StatelessWidget {
   const ListCakes({
     Key? key,
