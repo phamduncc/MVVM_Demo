@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 import 'package:mvvm_v2/model/user.dart';
 import 'package:mvvm_v2/service/web_service.dart';
 

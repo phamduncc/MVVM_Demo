@@ -1,3 +1,5 @@
+import 'package:injectable/injectable.dart';
+
 class User{
   late String name;
   late int age;

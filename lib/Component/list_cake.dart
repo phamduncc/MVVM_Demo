@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mvvm_v2/view_model/cake_list_view_model.dart';
 import 'package:provider/provider.dart';
 
+import '../locator.dart';
+
 class ListCakes extends StatelessWidget {
   const ListCakes({
     Key? key,
@@ -45,13 +47,13 @@ class ListCakes extends StatelessWidget {
                     TextButton(
                       child: Text("Xóa"),
                       onPressed: (){
-                        Provider.of<CakeListViewModel>(context, listen: false).Delete(index);
+                        getIt.get<CakeListViewModel>().Delete(index);
                       },
                     ),
                     TextButton(
                       child: Text("Sửa"),
                       onPressed: (){
-                        Provider.of<CakeListViewModel>(context, listen: false).Update(index);
+                        getIt.get<CakeListViewModel>().Update(index);
                       },
                     ),
                   ],
